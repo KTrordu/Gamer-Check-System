@@ -20,9 +20,9 @@ public class Main {
         CampaignManager campaignManager = new CampaignManager();
         SellManager sellManager = new SellManager();
 
-        User alptug = new User();
-        userManager.register(alptug);
-        userManager.addUser(alptug, users);
+        User user1 = new User();
+        userManager.register(user1);
+        userManager.addUser(user1, users);
 
         Game game1 = new Game();
         game1.setGameName("Legendary Game");
@@ -34,6 +34,6 @@ public class Main {
         Campaign campaign1 = new Campaign();
         campaignManager.addCampaign(game1, campaign1, 35);
 
-        sellManager.sell(game1, alptug);
+        sellManager.sell(game1, user1);
     }
 }
